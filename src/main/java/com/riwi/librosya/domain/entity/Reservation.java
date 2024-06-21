@@ -33,6 +33,13 @@ public class Reservation{
     @Column(length = 20, nullable = false)
     private String status;
 
+    @Column(name = "user_id",length = 20, nullable = false)
+    private Long userId;
+
+    @Column(name = "book_id",length = 20, nullable = false)
+    private Long bookId;
+
+
     /*Relationship with User */
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", referencedColumnName = "id")
