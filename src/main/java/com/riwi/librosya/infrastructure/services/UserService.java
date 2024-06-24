@@ -10,7 +10,7 @@ import com.riwi.librosya.api.dto.response.UserBasicResponse;
 import com.riwi.librosya.api.dto.response.UserResponse;
 import com.riwi.librosya.domain.entity.User;
 import com.riwi.librosya.domain.repositories.UserRepository;
-import com.riwi.librosya.util.mapper.UserMapper;
+import com.riwi.librosya.mapper.UserMapper;
 
 public class UserService {
      @Autowired

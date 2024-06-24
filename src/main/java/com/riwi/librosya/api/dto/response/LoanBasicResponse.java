@@ -1,6 +1,6 @@
 package com.riwi.librosya.api.dto.response;
 
-import java.sql.Date;
+import java.util.Date;
 
 
 import lombok.AllArgsConstructor;
@@ -20,5 +20,9 @@ public class LoanBasicResponse {
     private Date returnDate;
 
     private String status;
+
+    private Long userId;
+
+    private Long bookId;
 
 }

@@ -4,9 +4,6 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
-
-import com.riwi.librosya.util.enums.Status;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -37,7 +34,13 @@ public class Loan{
     private Date returnDate;
 
     @Column(length = 20, nullable = false)
-    private Status status;
+    private String status;
+
+    @Column(name = "user_id",length = 20, nullable = false)
+    private Long userId;
+
+    @Column(name = "book_id",length = 20, nullable = false)
+    private Long bookId;
 
     /*Relationship with User */
     @ManyToOne(fetch = FetchType.LAZY)
@@ -46,8 +49,8 @@ public class Loan{
 
     /*Relationship with Book */
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "book_id", referencedColumnName = "id")
-    private Book book;
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private List<Book> books;
 
 }
 

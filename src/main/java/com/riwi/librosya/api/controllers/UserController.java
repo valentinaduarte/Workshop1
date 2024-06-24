@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.riwi.librosya.api.dto.request.UserRequest;
 import com.riwi.librosya.api.dto.response.UserBasicResponse;
 import com.riwi.librosya.api.dto.response.UserResponse;
 import com.riwi.librosya.infrastructure.services.UserService;
