@@ -20,7 +20,4 @@ public class ReservationBasicResponse {
 
     private String status;
 
-    private Long userId;
-
-    private Long bookId;
 }

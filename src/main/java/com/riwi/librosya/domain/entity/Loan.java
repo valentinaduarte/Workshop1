@@ -50,7 +50,7 @@ public class Loan{
     /*Relationship with Book */
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", referencedColumnName = "id")
-    private List<Book> books;
+    private Book book;
 
 }
 

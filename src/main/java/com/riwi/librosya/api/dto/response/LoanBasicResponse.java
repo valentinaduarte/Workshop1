@@ -20,9 +20,4 @@ public class LoanBasicResponse {
     private Date returnDate;
 
     private String status;
-
-    private Long userId;
-
-    private Long bookId;
-
 }

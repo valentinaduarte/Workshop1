@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class BookBasicResponse {
     
     private Long id;
@@ -23,5 +22,4 @@ public class BookBasicResponse {
     private int publicationYear;
 
     private String isbn;
-
 }
